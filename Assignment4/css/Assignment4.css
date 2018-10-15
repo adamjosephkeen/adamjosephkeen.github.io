@@ -1,0 +1,85 @@
+html {
+  background: url(background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1.titlestuff{
+  text-align:center;
+  font-weight: bold;
+  border-bottom-style: dashed;
+  border-bottom-color:white;
+  padding-bottom: 10px;
+}
+
+h2.titlestuff{
+  text-align:center;
+  font-style: italic;
+}
+
+#adampic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3.titlestuff{
+   font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1; text-align: center;
+    color: #dcdcdc;
+}
+
+p{
+   font-family: 'Helvetica Neue', sans-serif;
+   font-size: 14px; line-height: 24px;
+   margin: 0 0 24px;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+h4.titlestuff{
+  color:white;
+  border-bottom-style: groove;
+  border-bottom-color: #dcdcdc;
+
+}
+
+h5.titlestuff{
+  text-decoration-style: wavy;
+  font-weight:bold;
+  font-size:100%;
+}
+
+ul{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+  background-image: url("lightning.gif");
+  background-repeat: no-repeat;
+  margin-right: 15px;
+
+}
+
+#wrapper{
+color:white;
+margin-left: auto;
+margin-right: auto;
+width:40%;
+}
+
+
+.titlestuff{
+  color:white;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
