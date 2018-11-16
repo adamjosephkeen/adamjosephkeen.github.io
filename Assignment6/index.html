@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+ 91.461 Assignment 6: A Dynamic Javascript Table
+  Adam J. Keen, UMass Lowell Computer Science, akeen@cs.uml.edu
+ Copyright (c) 2018 by Adam J Keen. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+Website is an introduction to html code. Basic tags and formatting used.
+ updated by AJK on November 13, 2018 at 5:09 PM
+-->
+
+<html lang="en">
+ <head>
+  <title>
+    Assignment 6 - A Dynamic Javascript Table
+  </title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+ </head>
+ <body>
+   <h1 id='h1'> </h1>
+   <form class="form-horizontal" role="form">
+                 <div class="form-group">
+                     <label class="control-label col-md-2" for="Number">Enter horizontal axis bounding numbers. Order does not matter. <br></label>
+                     <div class="col-sm-10">
+                         <input type="number" class="form-control" id="first_horizontal_num" placeholder="Enter a number" min="1" max="5">
+                         <input type="number" class="form-control" id="second_horizontal_num" placeholder="Enter a number" min="1" max="5">
+                     </div>
+
+                     <label class="control-label col-md-2" for="Number">Enter vertical axis bounding numbers. Order does not matter. <br></label>
+                     <div class ="col-sm-10">
+                       <input type="number" class="form-control" id="first_vertical_num" placeholder="Enter a number" min="1" max="5">
+                       <input type="number" class="form-control" id="second_vertical_num" placeholder="Enter a number" min="1" max="5">
+                     </div>
+
+
+
+    </form>
+
+    <button type="button" id="processbutton" class="btn btn-secondary" onclick="myFunction()">Process</button>
+
+
+
+    <script src="js/actions.js"></script>
+
+  </body>
+</html>
