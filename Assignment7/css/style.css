@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+  color: white;
+}
+button{
+margin-top: 20px;
+margin-bottom:20px;
+
+}
+input{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+th, td {
+    border: 1px solid white;
+}
+
+table{
+  width: 40%;
+  margin-left: 20%;
+}
