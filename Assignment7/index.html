@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--
+ 91.461 Assignment 7: A Dynamic Javascript Table
+  Adam J. Keen, UMass Lowell Computer Science, akeen@cs.uml.edu
+ Copyright (c) 2018 by Adam J Keen. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+Website is an introduction to html code. Basic tags and formatting used.
+ updated by AJK on November 24, 2018 at 6:02 PM
+-->
+
+<html lang="en">
+ <head>
+  <title>
+    Assignment 7 - JQuery Validation
+  </title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+ </head>
+ <body>
+   <h1 id='h1'> </h1>
+   <form class="form-horizontal" id="infoForm" role="form">
+                 <div class="form-group">
+                     <label class="control-label col-md-2" for="Number">Enter horizontal axis bounding numbers. Order does not matter. <br></label>
+                     <div class="col-sm-10">
+                         <input type="number" class="form-control" id="first_horizontal_num" placeholder="Enter a number"  required>
+                         <input type="number" class="form-control" id="second_horizontal_num" placeholder="Enter a number" required>
+                     </div>
+
+                     <label class="control-label col-md-2" for="Number">Enter vertical axis bounding numbers. Order does not matter. <br></label>
+                     <div class ="col-sm-10">
+                       <input type="number" class="form-control" id="first_vertical_num" placeholder="Enter a number" required>
+                       <input type="number" class="form-control" id="second_vertical_num" placeholder="Enter a number" required>
+
+
+   </div>
+ </div>
+
+ <button type="button" id="processbutton" class="btn btn-secondary" onclick="myFunction()">Process</button>
+
+
+
+    </form>
+
+
+
+
+    <script src="js/actions.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <script src="js/jquery.validate.js"></script>
+
+  </body>
+</html>
