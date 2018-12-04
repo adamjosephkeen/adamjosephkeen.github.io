@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--
+ 91.461 Assignment 8 - Using the jQuery UI Slider and Tab Widgets
+
+  Adam J. Keen, UMass Lowell Computer Science, akeen@cs.uml.edu
+ Copyright (c) 2018 by Adam J Keen. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+Website is an introduction to html code. Basic tags and formatting used.
+ updated by AJK on November 30, 2018 at 10:02 PM
+-->
+
+<html lang="en">
+ <head>
+  <title>
+    Assignment 8 - Using the jQuery UI Slider and Tab Widgets
+  </title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+ </head>
+ <body>
+   <h1 id='h1'> </h1>
+   <form class="form-horizontal" id="infoForm" role="form">
+                 <div class="form-group">
+                     <label class="control-label col-md-2" for="Number">Enter horizontal axis bounding numbers. Order does not matter. <br></label>
+                     <div class="col-sm-10">
+                       <div class="slidecontainer">
+                         <input type="range" min="-50" max="50" value="0" id="horizontal_num_one_slider" onchange="myFunction()">
+                         <input type="range" min="-50" max="50" value="0" id="horizontal_num_two_slider" onchange="myFunction()">
+                      </div>
+                         <input type="number" class="form-control" id="first_horizontal_num" placeholder="Enter a number"  required>
+                         <input type="number" class="form-control" id="second_horizontal_num" placeholder="Enter a number" required>
+                     </div>
+
+                     <label class="control-label col-md-2" for="Number">Enter vertical axis bounding numbers. Order does not matter. <br></label>
+                     <div class ="col-sm-10">
+                       <div class="slidecontainer2">
+                         <input type="range" min="-50" max="50" value="0" id="vertical_num_one_slider" onchange="myFunction()">
+                         <input type="range" min="-50" max="50" value="0" id="vertical_num_two_slider" onchange="myFunction()">
+                       </div>
+                       <input type="number" class="form-control" id="first_vertical_num" placeholder="Enter a number" required>
+                       <input type="number" class="form-control" id="second_vertical_num" placeholder="Enter a number" required>
+
+
+   </div>
+ </div>
+
+ </form>
+
+ <button type="button" id="processbutton" class="btn btn-secondary" onclick="myFunction()">Process</button>
+ <button type="button" id="savetablebutton" class="btn btn-secondary" onclick="saveTable()">Save Table</button>
+
+
+ <div class="tab">
+   <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab1</button>
+   <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab2</button>
+   <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab3</button>
+ </div>
+
+ <div id="Tab1" class="tabcontent">
+   <h3>Tab1</h3>
+   <p>Inside Tab 1.</p>
+ </div>
+
+ <div id="Tab2" class="tabcontent">
+   <h3>Tab2</h3>
+   <p>Inside Tab 2.</p>
+ </div>
+
+ <div id="Tab3" class="tabcontent">
+   <h3>Tab3</h3>
+   <p>Inside Tab 3.</p>
+ </div>
+
+    <script src="js/actions.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+
+  $('#horizontal_num_one_slider').on('input', function(){
+    $('#first_horizontal_num').val($('#horizontal_num_one_slider').val());
+});
+
+$('#horizontal_num_two_slider').on('input', function(){
+  $('#second_horizontal_num').val($('#horizontal_num_two_slider').val());
+});
+
+$('#vertical_num_one_slider').on('input', function(){
+  $('#first_vertical_num').val($('#vertical_num_one_slider').val());
+});
+
+$('#vertical_num_two_slider').on('input', function(){
+  $('#second_vertical_num').val($('#vertical_num_two_slider').val());
+});
+</script>
+  </body>
+</html>
