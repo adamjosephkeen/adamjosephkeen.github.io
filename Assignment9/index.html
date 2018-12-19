@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--
+ 91.461 Assignment 9- Implementing a Bit of Scrabble with Drag-and-Drop
+  Adam J. Keen, UMass Lowell Computer Science, akeen@cs.uml.edu
+ Copyright (c) 2018 by Adam J Keen. All rights reserved. May be
+freely
+ copied or excerpted for educational purposes with credit to the
+author.
+Website is an introduction to html code. Basic tags and formatting used.
+ updated by AJK on December 18, 2018 at 9:52 PM
+
+ <img src="css/tile_rack.png" alt="tile_rack" id="tile_rack">
+ <img src="css/scrabble_board.png" alt="scrabble_board" id="scrabble_board">
+
+ <div id="block1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+  <img id="exampledrag" draggable="true" ondragstart="drag(event)" src="css/smile.png" width="336" height="69" alt="SomePicture">
+
+
+  <button type="button" class="btn btn-outline-light">Light</button>
+
+-->
+
+<html lang="en">
+ <head>
+  <title>
+    Assignment 9 - Implementing a Bit of Scrabble with Drag-and-Drop
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+ </head>
+
+
+ <body>
+
+
+
+   <div id="block1" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block2" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block3" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block4" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block5" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block6" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block7" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block8" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block9" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block10" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block11" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block12" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block13" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block14" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   <div id="block15" class="emptytiles" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <button type="button" id="random_button" class="btn btn-outline-light" onclick="each_tile()">Randomize Tiles</button>
+    <img id="tile1" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/D.png" width="60px"; height="60px" alt="tile1">
+    <img id="tile2" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/E.png" width="60px"; height="60px" alt="tile2">
+    <img id="tile3" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/F.png" width="60px"; height="60px" alt="tile3">
+    <img id="tile4" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/A.png" width="60px"; height="60px" alt="tile4">
+    <img id="tile5" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/U.png" width="60px"; height="60px" alt="tile5">
+    <img id="tile6" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/L.png" width="60px"; height="60px" alt="tile6">
+    <img id="tile7" class ="tiles" draggable="true" ondragstart="drag(event)" src="css/T.png" width="60px"; height="60px" alt="tile7">
+
+    <button type="button" id = "score_button" class="btn btn-outline-light" onclick="get_score()">Get Score</button>
+    <img src="css/tile_rack.png" alt="tile_rack" id="tile_rack">
+    <h2 id="second_header"> 0 </h2>
+<div id="testdiv">
+</div>
+<script src="js/actions.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+  $( function() {
+  $( "#img1" ).draggable();
+} );
+
+
+  </script>
+
+  </body>
+
+  </html>
